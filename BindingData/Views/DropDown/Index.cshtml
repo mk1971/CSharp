@@ -1,0 +1,12 @@
+﻿@model BindingData.Models.Country
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Binding data into Dropdown list</h1>
+<hr />
+
+<select asp-for="Cid" asp-items="@(new SelectList(ViewBag.message, "Cid", "Cname"))">
+
+</select>
+
